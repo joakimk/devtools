@@ -9,10 +9,6 @@ defmodule Devtools do
       Enum.each(&write_file/1)
   end
 
-  def generate(_) do
-    IO.puts("Usage example: devtools ruby gen app/models/foo.rb")
-  end
-
   defp write_file(file) do
     File.mkdir_p parent_directory(file)
     { :ok, fd } = File.open(file.path, [ :write ])
