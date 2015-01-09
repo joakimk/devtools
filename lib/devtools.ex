@@ -10,7 +10,7 @@ defmodule Devtools do
   end
 
   def generate(_) do
-    IO.puts("Usage example: devtools ruby class app/models/foo")
+    IO.puts("Usage example: devtools ruby gen app/models/foo.rb")
   end
 
   defp write_file(file) do
